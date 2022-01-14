@@ -20,21 +20,8 @@ steps:
     script: |
       rm -rf source && rm -rf target
       mkdir source  && cd source
-      mkdir source1 && cd source1
-      mkdir bin && cd bin
-      touch source1-file1.js
-      touch source1-file2.css
-      touch source1-file3.js
-      cd ..
-      mkdir source2 && cd source2
-      mkdir bin && cd bin
-      touch source2-file1.js
-      touch source2-file2.css
-      touch source2-file3.js
-      cd ..
       touch root-file1.js
-      touch root-file2.css
-      touch root-file3.js
+      cd ..
       mkdir target
 
 # - template: test-step-template.yml
