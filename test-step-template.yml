@@ -22,10 +22,10 @@ steps:
   - task: CopyFiles@2
     displayName: ${{ parameters.displayName }}
     inputs:
-      SourceFolder: 'src/copy-files/source'
+      SourceFolder: 'source'
       Contents: |
         ${{ parameters.pattern }}
-      TargetFolder: 'src/copy-files/target'
+      TargetFolder: 'target'
       CleanTargetFolder: ${{ parameters.cleanTargetFolder }}
       OverWrite: ${{ parameters.overWrite }}
       flattenFolders: ${{ parameters.flattenFolders }}
